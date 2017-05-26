@@ -1,7 +1,7 @@
 # FastDemo
 安卓快速开发框架
 
-1.启动页全屏背景图
+1.启动页全屏背景图 \r
 2.第一次启动进入SplashActivity
 3.进入Mainactivity：底部四个tab可以切换不同的Fragment
 4.注册全局异常，完美处理崩溃界面，提升用户体验。注：如果需要集成bugly，将注册全局异常写在bugly初始化上面，否则bugly搜集不到异常信息

@@ -18,3 +18,5 @@
 8.AppManager应用程序Activity管理类：用于Activity管理和应用程序退出
 
 9.SharedPreferences类封装常用的本地sp数据的读写
+
+10.增加多状态视图的功能，参照：https://github.com/qyxxjd/MultipleStatusView

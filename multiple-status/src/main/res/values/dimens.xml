@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="custom_avloading_height">64dp</dimen>
+
+</resources>

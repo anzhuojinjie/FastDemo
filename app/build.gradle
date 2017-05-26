@@ -24,11 +24,11 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:support-v4:25.3.1'
-    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'//沉浸式状态栏
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    //沉浸式状态栏
     testCompile 'junit:junit:4.12'
     compile 'com.github.bumptech.glide:glide:3.7.0'
     //不同样式的图片显示https://github.com/wasabeef/glide-transformations
@@ -36,4 +36,5 @@ dependencies {
     compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
     //网络请求
     compile 'com.lzy.net:okgo:+'
+    compile project(':multiple-status')//https://github.com/qyxxjd/MultipleStatusView(多状态切换库，已经有默认的布局，不想用默认的就自己定义)
 }

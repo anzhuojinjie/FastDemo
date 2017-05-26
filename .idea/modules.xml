@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/FastDemo.iml" filepath="$PROJECT_DIR$/FastDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multiple-status/multiple-status.iml" filepath="$PROJECT_DIR$/multiple-status/multiple-status.iml" />
     </modules>
   </component>
 </project>

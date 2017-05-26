@@ -1,15 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="category"/>
-
-    <Button
-        android:id="@+id/btnCrash"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_height="match_parent">
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="空指针"/>
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnContent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="内容数据"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+        <Button
+            android:id="@+id/btnLoading"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="加载中"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+        <Button
+            android:id="@+id/btnEmpty"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="空视图"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+        <Button
+            android:id="@+id/btnError"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="错误视图"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+        <Button
+            android:id="@+id/btnEx"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="网络异常"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+    </LinearLayout>
+    <com.classic.common.MultipleStatusView
+        android:id="@+id/main_multiplestatusview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--
+        内容视图可以直接在app:contentView属性指定layout文件，如上。
+        其它视图不使用默认的就自定义一个布局文件
+        app:loadingView="@layout/custom_loading_view"
+        app:emptyView="@layout/custom_empty_view"
+        app:errorView="@layout/custom_error_view"
+        app:noNetworkView="@layout/custom_no_network_view"
+        app:contentView="@layout/main_content"
+        第二种用法：
+        直接写在MultipleStatusView节点内，如下。
+        -->
+        <RelativeLayout
+            android:id="@+id/content_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="这是内容"/>
+        </RelativeLayout>
+    </com.classic.common.MultipleStatusView>
+
+
 </LinearLayout>
